@@ -1,4 +1,4 @@
-# discord-gitlab
+# discord-paladins
 
 This a wrapper for the Paladins API by Hi-Rez studios.
 
