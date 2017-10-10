@@ -33,6 +33,10 @@ __NOTE__: Avoid creating a new Instance to often! The Session won't be valid aft
 
 Own Documentation will follow, for now here is the Link to the [official Hi-Rez API Documentation](https://docs.google.com/document/d/1OFS-3ocSx-1Rvg4afAnEHlT3917MAK_6eJTR6rzr-BM/edit);
 
+### ping()
+
+This is just a test function if the API is reachable.
+
 ### connect()
 
 The Basic function to connect with the API-Endpoint. It takes 4 Parameters, not more, not less.
@@ -72,6 +76,10 @@ This returns a assoc array with all the Champions.
 ### getChampion($name)
 
 This returns an assoc array based of the Champions name provided in `$name`. For example
+
+### getServerStatus()
+
+This returns the server status as an assoc array. Call it like this: `$status = $paladins->getServerStatus();` and read information like within a normal array: `$status['status']`.
 
 ## License
 

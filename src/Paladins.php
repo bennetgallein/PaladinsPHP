@@ -51,6 +51,9 @@ class Paladins {
             return "Failed to get a session ID.";
         }
     }
+    public function getServerStatus() {
+        return $this->req("gethirezserverstatus" . $this->format . "/" . $this->devId . "/" . $this->getSignature("gethirezserverstatus") . "/" . $this->session_id . "/" . $this->getTimestamp())[0];
+    }
     public function req($url) {
         if (isset($this->timestamp)) {
             if (strtotime($this->timestamp) < strtotime("-15 minutes")) {
@@ -86,7 +89,6 @@ class Paladins {
         return "No Champion with that name found!";
     }
     public function getTimestamp() {
-        //$date = new \DateTime();
         return gmdate('YmdHis');
     }
 }
