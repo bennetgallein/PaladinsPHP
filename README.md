@@ -43,7 +43,7 @@ The Basic function to connect with the API-Endpoint. It takes 4 Parameters, not 
 This library offers a few constants which are definitely good to use:
 
 language codes:
-```
+```php
 const ENGLISH = 1;
 const GERMAN = 2;
 const FRENCH = 3;
@@ -57,7 +57,7 @@ const TURKISH = 13;
 Access them with: `Paladins::<NAME>` for example: `Paladins::ENGLISH`;
 
 response formats:
-```
+```php
 const JSON = 'Json';
 const XML = 'xml';
 ```
