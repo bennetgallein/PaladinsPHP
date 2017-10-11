@@ -1,0 +1,9 @@
++ Nested-navs
+DONE + Image integration
+DONE + Downloadable pdf-files with the .containers content (javascript) (Graphs and Code formatting dont work)
++ Sharing links (goo.gl api)
++ Edit log
+DONE + bottom right corner: go top button
+DONE + Add footer
+DONE + Graph Integration
+DONE + Anker Links
