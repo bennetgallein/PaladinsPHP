@@ -51,6 +51,10 @@ class Paladins {
             return "Failed to get a session ID.";
         }
     }
+    public function testSession() {
+        return $this->req("testsession" . $this->format . "/" . $this->devId . "/" . $this->getSignature("testsession") . "/" . $this->session_id . "/" . $this->getTimestamp());
+    }
+
     public function getServerStatus() {
         return $this->req("gethirezserverstatus" . $this->format . "/" . $this->devId . "/" . $this->getSignature("gethirezserverstatus") . "/" . $this->session_id . "/" . $this->getTimestamp())[0];
     }
@@ -87,6 +91,9 @@ class Paladins {
             }
         }
         return "No Champion with that name found!";
+    }
+    public function getPlayer($player) {
+        return $this->req("getplayer" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getplayer") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player)[0];
     }
     public function getTimestamp() {
         return gmdate('YmdHis');

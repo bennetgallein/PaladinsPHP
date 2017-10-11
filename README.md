@@ -75,7 +75,11 @@ This returns a assoc array with all the Champions.
 ___
 #### getChampion($name)
 
-This returns an assoc array based of the Champions name provided in `$name`. For example
+This returns an assoc array based of the Champions name provided in `$name`. For example: `$paladins->getChampion("Androxus");`
+___
+### getPlayer($name)
+
+This returns a assoc array based of the Playername provided in `$name`. For example: `$paladins->getPlayer("BennetPHP");`
 ___
 #### getServerStatus()
 
