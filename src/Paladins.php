@@ -98,6 +98,9 @@ class Paladins {
     public function getPlayerLoadouts($playerId) {
         return $this->req("getplayerloadouts" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getplayerloadouts") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $playerId . "/" . $this->lang);
     }
+    public function getPlayerStatus($player) {
+        return $this->req("getplayerstatus" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getplayerstatus") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player)[0];
+    }
     public function getTimestamp() {
         return gmdate('YmdHis');
     }

@@ -75,12 +75,19 @@ This returns a assoc array with all the Champions.
 ___
 #### getChampion($name)
 
-This returns an assoc array based of the Champions name provided in `$name`. For example: `$paladins->getChampion("Androxus");`
+This returns an assoc array based of the Champions name provided in `$name`. For example: `$paladins->getChampion("Androxus");`.
 ___
 ### getPlayer($name)
 
-This returns a assoc array based of the Playername provided in `$name`. For example: `$paladins->getPlayer("BennetPHP");`
+This returns a assoc array based of the Playername provided in `$name`. For example: `$paladins->getPlayer("BennetPHP");`.
 ___
+### getPlayerLoadouts($playerID)
+
+This returns an array of Loadouts for all champions based on the Players ID give in `$playerID`.
+___
+### getPlayerStatus($player)
+
+This returns the status of the Player. `$player` is a string, for example: `$paladins->getPlayerStatus("BennetPHP");`.
 #### getServerStatus()
 
 This returns the server status as an assoc array. Call it like this: `$status = $paladins->getServerStatus();` and read information like within a normal array: `$status['status']`.
