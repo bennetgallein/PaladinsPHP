@@ -110,6 +110,9 @@ class Paladins {
     public function getGodRanks($player) {
         return $this->req("getgodranks" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getgodranks") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player);
     }
+    public function getChampionRanks($player) {
+        return $this->req("getchampionranks" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getchampionranks") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player);
+    }
     public function getTimestamp() {
         return gmdate('YmdHis');
     }

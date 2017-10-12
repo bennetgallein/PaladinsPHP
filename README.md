@@ -100,6 +100,13 @@ ___
 ### getGodRanks($player)
 
 This returns an array of each Hero with more information. Example: `$paladins->getGodRanks("BennetPHP");`.
+
+__OR__
+
+### getChampionRanks($player)
+
+This returns the same as `getGodRanks()` for some weird reason.
+
 ___
 ### getServerStatus()
 
