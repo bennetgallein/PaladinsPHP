@@ -58,6 +58,9 @@ class Paladins {
     public function getServerStatus() {
         return $this->req("gethirezserverstatus" . $this->format . "/" . $this->devId . "/" . $this->getSignature("gethirezserverstatus") . "/" . $this->session_id . "/" . $this->getTimestamp())[0];
     }
+    public function getDataUsed() {
+        return $this->req("getdataused" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getdataused") . "/" . $this->session_id . "/" . $this->getTimestamp());
+    }
     public function req($url) {
         if (isset($this->timestamp)) {
             if (strtotime($this->timestamp) < strtotime("-15 minutes")) {

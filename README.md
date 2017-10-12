@@ -93,7 +93,11 @@ ___
 
 This returns an array of Friends. Example: `$paladins->getFriends("BennetPHP");`.
 ___
-#### getServerStatus()
+### getDataUsed()
+
+This returns an array of information about the API's limitations.
+___
+### getServerStatus()
 
 This returns the server status as an assoc array. Call it like this: `$status = $paladins->getServerStatus();` and read information like within a normal array: `$status['status']`.
 ___
