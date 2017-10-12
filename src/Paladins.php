@@ -107,6 +107,9 @@ class Paladins {
     public function getFriends($player) {
         return $this->req("getfriends" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getfriends") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player);
     }
+    public function getGodRanks($player) {
+        return $this->req("getgodranks" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getgodranks") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player);
+    }
     public function getTimestamp() {
         return gmdate('YmdHis');
     }
