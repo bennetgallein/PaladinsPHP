@@ -89,6 +89,10 @@ ___
 
 This returns the status of the Player. `$player` is a string, for example: `$paladins->getPlayerStatus("BennetPHP");`.
 ___
+### getFriends($player)
+
+This returns an array of Friends. Example: `$paladins->getFriends("BennetPHP");`.
+___
 #### getServerStatus()
 
 This returns the server status as an assoc array. Call it like this: `$status = $paladins->getServerStatus();` and read information like within a normal array: `$status['status']`.

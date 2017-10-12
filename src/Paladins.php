@@ -101,6 +101,9 @@ class Paladins {
     public function getPlayerStatus($player) {
         return $this->req("getplayerstatus" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getplayerstatus") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player)[0];
     }
+    public function getFriends($player) {
+        return $this->req("getfriends" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getfriends") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player);
+    }
     public function getTimestamp() {
         return gmdate('YmdHis');
     }
