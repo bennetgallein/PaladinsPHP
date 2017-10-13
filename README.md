@@ -108,6 +108,10 @@ __OR__
 This returns the same as `getGodRanks()` for some weird reason.
 
 ___
+### getItems()
+
+This returns an array of all Items that are available.
+___
 ### getServerStatus()
 
 This returns the server status as an assoc array. Call it like this: `$status = $paladins->getServerStatus();` and read information like within a normal array: `$status['status']`.
