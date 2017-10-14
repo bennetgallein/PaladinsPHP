@@ -77,42 +77,50 @@ ___
 
 This returns an assoc array based of the Champions name provided in `$name`. For example: `$paladins->getChampion("Androxus");`.
 ___
-### getPlayer($name)
+#### getChampionSkins($id)
+
+This returns an assoc array based on the Champions ID provided in `$id`. For example:
+```php
+$androxus = $paladins->getChampion("Androxus")['id'];
+print_r($paladins->getChampionSkins($androxus));
+```
+___
+#### getPlayer($name)
 
 This returns a assoc array based of the Playername provided in `$name`. For example: `$paladins->getPlayer("BennetPHP");`.
 ___
-### getPlayerLoadouts($playerID)
+#### getPlayerLoadouts($playerID)
 
 This returns an array of Loadouts for all champions based on the Players ID give in `$playerID`.
 ___
-### getPlayerStatus($player)
+#### getPlayerStatus($player)
 
 This returns the status of the Player. `$player` is a string, for example: `$paladins->getPlayerStatus("BennetPHP");`.
 ___
-### getFriends($player)
+#### getFriends($player)
 
 This returns an array of Friends. Example: `$paladins->getFriends("BennetPHP");`.
 ___
-### getDataUsed()
+#### getDataUsed()
 
 This returns an array of information about the API's limitations.
 ___
-### getGodRanks($player)
+#### getGodRanks($player)
 
 This returns an array of each Hero with more information. Example: `$paladins->getGodRanks("BennetPHP");`.
 
 __OR__
 
-### getChampionRanks($player)
+#### getChampionRanks($player)
 
 This returns the same as `getGodRanks()` for some weird reason.
 
 ___
-### getItems()
+#### getItems()
 
 This returns an array of all Items that are available.
 ___
-### getServerStatus()
+#### getServerStatus()
 
 This returns the server status as an assoc array. Call it like this: `$status = $paladins->getServerStatus();` and read information like within a normal array: `$status['status']`.
 ___

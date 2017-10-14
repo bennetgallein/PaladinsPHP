@@ -86,6 +86,9 @@ class Paladins {
     public function getChampions() {
         return $this->req("getchampions" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getchampions") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $this->lang);
     }
+    public function getChampionSkins($id) {
+        return $this->req("getchampionskins" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getchampionskins") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $id . "/" . $this->lang);
+    }
     public function getChampion($name) {
         $champions = $this->req("getchampions" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getchampions") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $this->lang);
         foreach($champions as $champion => $value) {
