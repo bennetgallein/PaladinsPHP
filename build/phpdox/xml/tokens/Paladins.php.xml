@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src" file="Paladins.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Paladins.php" size="7416" time="2017-12-10T10:26:31+00:00" unixtime="1512901591" sha1="d0cae9ff2dd03cca710e76c112a116d14b542aa1" relative="Paladins.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src" file="Paladins.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Paladins.php" size="7417" time="2017-12-10T13:33:21+00:00" unixtime="1512912801" sha1="7eb1ba138061e11c2690724b0a857d369a2894c3" relative="Paladins.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -1059,7 +1059,7 @@
   </line>
   <line no="96">
     <token name="T_WHITESPACE">    </token>
-    <token name="T_PUBLIC">public</token>
+    <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Paladins\Paladins" namespace="Paladins" name="Paladins" abstract="false" final="false" start="4" end="160">
-  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src" file="Paladins.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Paladins.php" size="7416" time="2017-12-10T10:26:31+00:00" unixtime="1512901591" sha1="d0cae9ff2dd03cca710e76c112a116d14b542aa1" relative="Paladins.php"/>
+  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src" file="Paladins.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Paladins.php" size="7417" time="2017-12-10T13:33:21+00:00" unixtime="1512912801" sha1="7eb1ba138061e11c2690724b0a857d369a2894c3" relative="Paladins.php"/>
   <constant type="integer" name="ENGLISH" value="1"/>
   <constant type="integer" name="GERMAN" value="2"/>
   <constant type="integer" name="FRENCH" value="3"/>
@@ -39,7 +39,7 @@
   <method name="testSession" start="86" end="88" abstract="false" final="false" static="false" visibility="public"/>
   <method name="getServerStatus" start="90" end="92" abstract="false" final="false" static="false" visibility="public"/>
   <method name="getDataUsed" start="93" end="95" abstract="false" final="false" static="false" visibility="public"/>
-  <method name="req" start="96" end="114" abstract="false" final="false" static="false" visibility="public">
+  <method name="req" start="96" end="114" abstract="false" final="false" static="false" visibility="private">
     <parameter name="url" byreference="false" type="{unknown}"/>
   </method>
   <method name="getSignature" start="115" end="117" abstract="false" final="false" static="false" visibility="public">

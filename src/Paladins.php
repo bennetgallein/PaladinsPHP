@@ -93,7 +93,7 @@ class Paladins {
     public function getDataUsed() {
         return $this->req("getdataused" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getdataused") . "/" . $this->session_id . "/" . $this->getTimestamp());
     }
-    public function req($url) {
+    private function req($url) {
         if (isset($this->timestamp)) {
             if (strtotime($this->timestamp) < strtotime("-15 minutes")) {
                 $this->connect();
