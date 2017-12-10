@@ -1,6 +1,7 @@
 # PaladinsPHP [![Build Status](https://travis-ci.org/bennetgallein/PaladinsPHP.svg?branch=master)](https://travis-ci.org/bennetgallein/PaladinsPHP)
 
 This a wrapper for the Paladins API by Hi-Rez studios.
+You can find the PHP Documentation here: [https://bennetgallein.github.io/PaladinsPHP](https://bennetgallein.github.io/PaladinsPHP)
 ___
 ## Getting Started
 
