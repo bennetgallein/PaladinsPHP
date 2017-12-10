@@ -9,6 +9,9 @@ ___
 #### Composer require command
 `composer require bennetgallein/paladins-php`
 ___
+### Notice:
+I am not familiar with the Game "Smite", so there may be endpoints from Smite in this API. If there are, please open a issue or a pull request. Also the Documentation from HiRez is not very sexy, so please excuse me.
+___
 ## Usage
 
 It is fairly easy to use. I'll throw in an example.
@@ -24,10 +27,11 @@ $authKey = 'YOUR_DEV_AUTHKEY';
 $format = Paladins::JSON; // see Documentation
 $lang = Paladins::ENGLISH; // see Documentation
 
-$paladins = new Paladins($devId, $authKey, $format, $lang);
+$paladins = new Paladins($devId, $authKey, $format, $lang, "localhost, "root_user", "root_password", "database_name");
+
 $paladins->connect();
 ```
-__NOTE__: Avoid creating a new Instance to often! The Session won't be valid after 15 Minutes, but the my API automatically creates a new one if you make any kind of request. So to avoid reaching the API's access limit (sessions per day of 500), do not make a new instance everytime you refresh!
+__NOTE__: The API automatically renews the session with help of a MySQL Database. Therefore you need the MySQL Parameters. Default Parameters for host, user, password and database are the following: "localhost, root, root and PaladinsAPI".
 ___
 ## Documentation
 
@@ -40,7 +44,8 @@ ___
 #### connect()
 
 The Basic function to connect with the API-Endpoint. It takes 4 Parameters, not more, not less.
-`$devId, $authKey, $format and $lang`, where `$format` is the response format of the API and `$lang` the language you want to use.
+`$devId, $authKey, $format, $lang, $host, $user, $password, $database`, where `$format` is the response format of the API and `$lang` the language you want to use.
+The `$host`, `$user`, `$password` and `$database` are MySQL Parameters. Be sure to have a Database setup. Table creation does the API itselfs.
 ___
 #### constants
 
@@ -52,7 +57,7 @@ const ENGLISH = 1;
 const GERMAN = 2;
 const FRENCH = 3;
 const SPANISH = 7;
-const SPANISHLA = 9;
+const SPANISHLA = 9; // Spanish (Latin America)
 const PORTUGUESE = 10;
 const RUSSIAN = 11;
 const POLISH = 12;
@@ -123,6 +128,37 @@ ___
 #### getServerStatus()
 
 This returns the server status as an assoc array. Call it like this: `$status = $paladins->getServerStatus();` and read information like within a normal array: `$status['status']`.
+___
+## TODO:
+#### methods:
+- ~~/createsession~~
+- ~~/testsession~~
+- ~~/gethirezserverstatus~~
+- ~~/getdataused~~
+- /getdemodetails
+- /getesportproleaguedetails
+- /~~getfriends~~
+- /~~getgodranks~~
+- /getchampionsranks
+- /getgods
+- /~~getchampions~~
+- /getgodskins
+- /~~getitems~~
+- /getmatchdetails
+- /getmatchplayerdetails
+- /getleagueseasons
+- /getmatchhistory
+- /getmotd
+- /~~getplayer~~
+- /~~getplayerstatus~~
+- /getqueuestats
+- /getteamdetails
+- /getteammatchhistory
+- /getteamplayers
+- /gettopmatches
+- /searchteams
+- /getplayerachievements
+- /getpatchinfo
 ___
 ## License
 

@@ -28,27 +28,59 @@ class Paladins {
 
     private $baseURL = 'http://api.paladins.com/paladinsapi.svc';
 
-    public function __construct($devId, $authKey, $format = "json", $lang = 1) {
+    private $link;
+
+    public function __construct($devId, $authKey, $format = Paladins::JSON, $lang = Paladins::ENGLISH, $host = "localhost", $user = "root", $password = "root", $database = "PaladinsAPI") {
 
         date_default_timezone_set('UTC');
+
+        $this->link = mysqli_connect($host, $user, $password, $database);
+        mysqli_query($this->link, "SET names UTF8");
+        $query = "SHOW TABLES LIKE 'sessions'";
+        $res = mysqli_query($this->link, $query);
+        if ($res->num_rows != 1) {
+            $query = "CREATE TABLE sessions
+                        (
+                          `id`      INT AUTO_INCREMENT
+                            PRIMARY KEY,
+                          sessionid  VARCHAR(32)                         NOT NULL,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+                        );";
+            $result = mysqli_query($this->link, $query);
+            if (!$result) echo "MySQL Error!";
+        }
 
         $this->devId = $devId;
         $this->authKey = $authKey;
         $this->format = $format;
         $this->lang = $lang;
     }
+
     /* API METHODS */
     public function ping() {
         return $this->req("ping" . $this->format);
     }
     public function connect() {
-        $session =  $this->req("createsession" . $this->format . "/" . $this->devId . "/" . $this->getSignature("createsession") . "/" . $this->getTimestamp());
-        // WIP
-        if ($session['ret_msg'] === "Approved") {
-            $this->session_id = $session['session_id'];
-            $this->timestamp = $session['timestamp'];
+        // implement loading from session out of mysql database
+        $query = "SELECT * FROM sessions WHERE created_at > date_sub(now(), interval 14 minute)";
+        $result = mysqli_query($this->link, $query);
+        if ($result) {
+            if ($result->num_rows == 1) {
+                while($row = $result->fetch_object()) {
+                    $this->session_id = $row->sessionid;
+                }
+            } else if ($result->num_rows == 0) {
+                $session = $this->req("createsession" . $this->format . "/" . $this->devId . "/" . $this->getSignature("createsession") . "/" . $this->getTimestamp());
+                $query = "INSERT INTO sessions (sessionid) VALUES ('" . $session['session_id'] . "');";
+                $res = mysqli_query($this->link, $query);
+                if ($res) {
+                    $this->session_id = $session['session_id'];
+                } else {
+                    echo "Error saving the session key." . mysqli_error($this->link);
+                }
+            }
         } else {
-            return "Failed to get a session ID.";
+            echo "Error:" . mysqli_error($this->link);
         }
     }
     public function testSession() {
@@ -92,7 +124,7 @@ class Paladins {
     public function getChampion($name) {
         $champions = $this->req("getchampions" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getchampions") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $this->lang);
         foreach($champions as $champion => $value) {
-            if ($value['Name'] === $name) {
+            if ($value['Name'] == $name) {
                 return $value;
             }
         }
@@ -121,5 +153,8 @@ class Paladins {
     }
     public function getTimestamp() {
         return gmdate('YmdHis');
+    }
+    public function getSessionID() {
+        return $this->session_id;
     }
 }

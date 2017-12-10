@@ -14,5 +14,6 @@
         "Paladins\\": "src/"
       }
     },
-    "require": {}
+    "require": {
+    }
 }
