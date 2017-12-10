@@ -12,6 +12,7 @@ namespace Paladins\Champion;
 /**
  * Class Champion
  * @package Paladins\Champion
+ * @author Bennet Gallein
  */
 class Champion {
 

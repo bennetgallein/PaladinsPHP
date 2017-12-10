@@ -12,6 +12,7 @@ namespace Paladins\Champion;
 /**
  * Class Ability
  * @package Paladins\Champion
+ * @author Bennet Gallein
  */
 class Ability {
 

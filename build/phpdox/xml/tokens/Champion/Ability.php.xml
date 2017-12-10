@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion" file="Ability.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion/Ability.php" size="1362" time="2017-12-10T14:13:53+00:00" unixtime="1512915233" sha1="f4701fa3e5e1328e87e998abe97a2e72730aea93" relative="Champion/Ability.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion" file="Ability.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion/Ability.php" size="1389" time="2017-12-10T14:44:37+00:00" unixtime="1512917077" sha1="83108a4fdb5bb9598397695b0a4d61a11493bc10" relative="Champion/Ability.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -43,75 +43,78 @@
     <token name="T_DOC_COMMENT"> * @package Paladins\Champion</token>
   </line>
   <line no="15">
-    <token name="T_DOC_COMMENT"> */</token>
+    <token name="T_DOC_COMMENT"> * @author Bennet Gallein</token>
   </line>
   <line no="16">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="17">
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">Ability</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="17"/>
-  <line no="18">
+  <line no="18"/>
+  <line no="19">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/** @var string $description Should contain the abilitys description */</token>
   </line>
-  <line no="19">
+  <line no="20">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$description</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="20">
+  <line no="21">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/** @var int $id Should contain the abilitys ID.  */</token>
   </line>
-  <line no="21">
+  <line no="22">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$id</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="22">
+  <line no="23">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/** @var string $summary Should contain the abilitys summary. */</token>
   </line>
-  <line no="23">
+  <line no="24">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$summary</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="24">
+  <line no="25">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/** @var string $URL Should contain the abilitys image url*/</token>
   </line>
-  <line no="25">
+  <line no="26">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PRIVATE">private</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$URL</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="26"/>
-  <line no="27">
+  <line no="27"/>
+  <line no="28">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="28">
+  <line no="29">
     <token name="T_DOC_COMMENT">     * Ability constructor.</token>
   </line>
-  <line no="29">
+  <line no="30">
     <token name="T_DOC_COMMENT">     * @param $ability array</token>
   </line>
-  <line no="30">
+  <line no="31">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="31">
+  <line no="32">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -124,7 +127,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="32">
+  <line no="33">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -138,7 +141,7 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="33">
+  <line no="34">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -152,7 +155,7 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="34">
+  <line no="35">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -166,7 +169,7 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="35">
+  <line no="36">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -180,22 +183,22 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="36">
+  <line no="37">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="37"/>
-  <line no="38">
+  <line no="38"/>
+  <line no="39">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="39">
+  <line no="40">
     <token name="T_DOC_COMMENT">     * @return mixed|string</token>
   </line>
-  <line no="40">
+  <line no="41">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="41">
+  <line no="42">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -207,7 +210,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="42">
+  <line no="43">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -216,22 +219,22 @@
     <token name="T_STRING">description</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="43">
+  <line no="44">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="44"/>
-  <line no="45">
+  <line no="45"/>
+  <line no="46">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="46">
+  <line no="47">
     <token name="T_DOC_COMMENT">     * @return int|mixed</token>
   </line>
-  <line no="47">
+  <line no="48">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="48">
+  <line no="49">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -243,7 +246,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="49">
+  <line no="50">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -252,22 +255,22 @@
     <token name="T_STRING">id</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="50">
+  <line no="51">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="51"/>
-  <line no="52">
+  <line no="52"/>
+  <line no="53">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="53">
+  <line no="54">
     <token name="T_DOC_COMMENT">     * @return mixed|string</token>
   </line>
-  <line no="54">
+  <line no="55">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="55">
+  <line no="56">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -279,7 +282,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="56">
+  <line no="57">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -288,22 +291,22 @@
     <token name="T_STRING">summary</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="57">
+  <line no="58">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="58"/>
-  <line no="59">
+  <line no="59"/>
+  <line no="60">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="60">
+  <line no="61">
     <token name="T_DOC_COMMENT">     * @return mixed|string</token>
   </line>
-  <line no="61">
+  <line no="62">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="62">
+  <line no="63">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -315,7 +318,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="63">
+  <line no="64">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -324,11 +327,11 @@
     <token name="T_STRING">URL</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="64">
+  <line no="65">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="65"/>
-  <line no="66">
+  <line no="66"/>
+  <line no="67">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
 </source>

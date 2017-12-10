@@ -5,6 +5,7 @@ namespace Paladins;
 /**
  * Class Paladins
  * @package Paladins
+ * @author Bennet Gallein
  */
 class Paladins {
 

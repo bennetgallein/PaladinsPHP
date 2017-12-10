@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Paladins\Player\Player" namespace="Paladins\Player" name="Player" abstract="false" final="false" start="16" end="208">
+  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Player" file="Player.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Player/Player.php" size="3866" time="2017-12-10T14:44:37+00:00" unixtime="1512917077" sha1="4882cdf960e1ab8aff4a6ea157fe265d136925b6" relative="Player/Player.php"/>
+  <docblock>
+    <description compact="Class Player"/>
+    <package value="Paladins\Player"/>
+    <author value="Bennet Gallein"/>
+  </docblock>
+  <member name="created_date" visibility="private" static="false" line="21">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="id" visibility="private" static="false" line="25">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="last_login" visibility="private" static="false" line="29">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="leaves" visibility="private" static="false" line="33">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="losses" visibility="private" static="false" line="37">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="materylevel" visibility="private" static="false" line="41">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="name" visibility="private" static="false" line="45">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="personal_status" visibility="private" static="false" line="49">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ranked" visibility="private" static="false" line="53">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="Paladins\Player\RankedConquest" namespace="Paladins\Player" name="RankedConquest"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="region" visibility="private" static="false" line="57">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="teamid" visibility="private" static="false" line="61">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="teamname" visibility="private" static="false" line="65">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="tier_conquest" visibility="private" static="false" line="69">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="total_worshippers" visibility="private" static="false" line="73">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="wins" visibility="private" static="false" line="77">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="83" end="101" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Player constructor."/>
+      <param variable="$player"/>
+    </docblock>
+    <parameter name="player" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="getCreatedDate" start="106" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getId" start="113" end="115" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getLastLogin" start="120" end="122" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getLeaves" start="127" end="129" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getLosses" start="134" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getMaterylevel" start="141" end="143" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getName" start="148" end="150" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getPersonalStatus" start="155" end="157" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getRanked" start="162" end="164" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Paladins\Player\RankedConquest" namespace="Paladins\Player" name="RankedConquest"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="getRegion" start="169" end="171" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getTeamid" start="176" end="178" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getTeamname" start="183" end="185" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getTierConquest" start="190" end="192" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getTotalWorshippers" start="197" end="199" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getWins" start="204" end="206" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+</class>

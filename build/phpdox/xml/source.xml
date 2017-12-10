@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src">
-    <file name="Paladins.php" size="8833" time="2017-12-10T14:17:59+00:00" unixtime="1512915479" sha1="d7763ecb3536d68ad2aad3c9703f12212ca0bfa1" xml="tokens/Paladins.php.xml"/>
+    <dir name="Player">
+      <file name="RankedConquest.php" size="3500" time="2017-12-10T14:44:21+00:00" unixtime="1512917061" sha1="506d503cebbefd94b30a8fbb2d1d6005869d9c50" xml="tokens/Player/RankedConquest.php.xml"/>
+      <file name="Player.php" size="3866" time="2017-12-10T14:44:37+00:00" unixtime="1512917077" sha1="4882cdf960e1ab8aff4a6ea157fe265d136925b6" xml="tokens/Player/Player.php.xml"/>
+    </dir>
+    <file name="Paladins.php" size="8860" time="2017-12-10T14:44:50+00:00" unixtime="1512917090" sha1="36e8490b3eb0a12ced0b13b451a2bca195627012" xml="tokens/Paladins.php.xml"/>
     <dir name="Champion">
-      <file name="Champion.php" size="4481" time="2017-12-10T14:14:08+00:00" unixtime="1512915248" sha1="e25619e2a1a949713d837d4c40ce34c6d2460069" xml="tokens/Champion/Champion.php.xml"/>
-      <file name="Ability.php" size="1362" time="2017-12-10T14:13:53+00:00" unixtime="1512915233" sha1="f4701fa3e5e1328e87e998abe97a2e72730aea93" xml="tokens/Champion/Ability.php.xml"/>
+      <file name="Champion.php" size="4508" time="2017-12-10T14:44:41+00:00" unixtime="1512917081" sha1="124a7a1b7ddf83d2a837b28c866dc2fbb6b1ee06" xml="tokens/Champion/Champion.php.xml"/>
+      <file name="Ability.php" size="1389" time="2017-12-10T14:44:37+00:00" unixtime="1512917077" sha1="83108a4fdb5bb9598397695b0a4d61a11493bc10" xml="tokens/Champion/Ability.php.xml"/>
     </dir>
   </dir>
 </source>
