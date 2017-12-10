@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<source xmlns="http://xml.phpdox.net/src">
+  <dir name="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src">
+    <file name="Champion.php" size="3030" time="2017-12-10T12:23:48+00:00" unixtime="1512908628" sha1="a0136e93b4cdb0cfaf51e6f617c360147c9c173a" xml="tokens/Champion.php.xml"/>
+    <file name="Paladins.php" size="7416" time="2017-12-10T10:26:31+00:00" unixtime="1512901591" sha1="d0cae9ff2dd03cca710e76c112a116d14b542aa1" xml="tokens/Paladins.php.xml"/>
+    <file name="Ability.php" size="755" time="2017-12-10T10:57:03+00:00" unixtime="1512903423" sha1="8a487fb520076439815a5320d9f4fed8fa3a99fb" xml="tokens/Ability.php.xml"/>
+  </dir>
+</source>

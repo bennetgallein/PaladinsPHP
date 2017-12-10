@@ -1,4 +1,4 @@
-# discord-paladins
+# discord-paladins [![Build Status](https://travis-ci.org/bennetgallein/PaladinsPHP.svg?branch=master)](https://travis-ci.org/bennetgallein/PaladinsPHP)
 
 This a wrapper for the Paladins API by Hi-Rez studios.
 ___

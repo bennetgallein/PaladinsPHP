@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src">
+  <namespace name="Paladins">
+    <class name="Champion" src="Champion.php" xml="classes/Paladins_Champion.xml"/>
+    <class name="Paladins" src="Paladins.php" xml="classes/Paladins_Paladins.xml"/>
+    <class name="Ability" src="Ability.php" xml="classes/Paladins_Ability.xml"/>
+  </namespace>
+</index>

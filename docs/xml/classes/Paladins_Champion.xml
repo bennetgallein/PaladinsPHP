@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Paladins\Champion" namespace="Paladins" name="Champion" abstract="false" final="false" start="12" end="129">
+  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src" file="Champion.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion.php" size="3030" time="2017-12-10T12:23:48+00:00" unixtime="1512908628" sha1="a0136e93b4cdb0cfaf51e6f617c360147c9c173a" relative="Champion.php"/>
+  <member name="name" visibility="private" static="false" line="14"/>
+  <member name="ability1" visibility="private" static="false" line="15"/>
+  <member name="ability2" visibility="private" static="false" line="16"/>
+  <member name="ability3" visibility="private" static="false" line="17"/>
+  <member name="ability4" visibility="private" static="false" line="18"/>
+  <member name="ability5" visibility="private" static="false" line="19"/>
+  <member name="champion_card_url" visibility="private" static="false" line="21"/>
+  <member name="champion_icon_url" visibility="private" static="false" line="22"/>
+  <member name="id" visibility="private" static="false" line="24"/>
+  <member name="health" visibility="private" static="false" line="25"/>
+  <member name="pantheon" visibility="private" static="false" line="26"/>
+  <member name="cons" visibility="private" static="false" line="27"/>
+  <member name="pros" visibility="private" static="false" line="28"/>
+  <member name="role" visibility="private" static="false" line="29"/>
+  <member name="speed" visibility="private" static="false" line="30"/>
+  <member name="title" visibility="private" static="false" line="31"/>
+  <member name="latestChampion" visibility="private" static="false" line="32"/>
+  <constructor name="__construct" start="35" end="60" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="champion" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="getID" start="61" end="63" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getName" start="64" end="66" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getAllAbilitys" start="67" end="69" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getAbility1" start="70" end="72" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getAbility2" start="74" end="76" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getAbility3" start="78" end="80" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getAbility4" start="82" end="84" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getAbility5" start="86" end="88" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getChampionCardUrl" start="90" end="92" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getChampionIconUrl" start="94" end="96" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getHealth" start="98" end="100" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getPantheon" start="102" end="104" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getCons" start="106" end="108" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getPros" start="110" end="112" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getRole" start="114" end="116" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getSpeed" start="118" end="120" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getTitle" start="122" end="124" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="isLatestChampion" start="126" end="128" abstract="false" final="false" static="false" visibility="public"/>
+</class>

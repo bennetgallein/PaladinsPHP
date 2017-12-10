@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Paladins\Paladins" namespace="Paladins" name="Paladins" abstract="false" final="false" start="4" end="160">
+  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src" file="Paladins.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Paladins.php" size="7416" time="2017-12-10T10:26:31+00:00" unixtime="1512901591" sha1="d0cae9ff2dd03cca710e76c112a116d14b542aa1" relative="Paladins.php"/>
+  <constant type="integer" name="ENGLISH" value="1"/>
+  <constant type="integer" name="GERMAN" value="2"/>
+  <constant type="integer" name="FRENCH" value="3"/>
+  <constant type="integer" name="SPANISH" value="7"/>
+  <constant type="integer" name="SPANISHLA" value="9"/>
+  <constant type="integer" name="PORTUGUESE" value="10"/>
+  <constant type="integer" name="RUSSIAN" value="11"/>
+  <constant type="integer" name="POLISH" value="12"/>
+  <constant type="integer" name="TURKISH" value="13"/>
+  <constant type="string" name="JSON" value="'Json'"/>
+  <constant type="string" name="XML" value="'xml'"/>
+  <member name="timestamp" visibility="private" static="false" line="21"/>
+  <member name="session_id" visibility="private" static="false" line="22"/>
+  <member name="devId" visibility="private" static="false" line="24"/>
+  <member name="authKey" visibility="private" static="false" line="25"/>
+  <member name="format" visibility="private" static="false" line="26"/>
+  <member name="lang" visibility="private" static="false" line="27"/>
+  <member name="baseURL" default="'http://api.paladins.com/paladinsapi.svc'" type="string" visibility="private" static="false" line="29"/>
+  <member name="link" visibility="private" static="false" line="31"/>
+  <constructor name="__construct" start="33" end="57" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="devId" byreference="false" type="{unknown}"/>
+    <parameter name="authKey" byreference="false" type="{unknown}"/>
+    <parameter name="format" byreference="false" type="{unknown}" default="" constant="Paladins::JSON"/>
+    <parameter name="lang" byreference="false" type="{unknown}" default="" constant="Paladins::ENGLISH"/>
+    <parameter name="host" byreference="false" type="string" default="&quot;localhost&quot;"/>
+    <parameter name="user" byreference="false" type="string" default="&quot;root&quot;"/>
+    <parameter name="password" byreference="false" type="string" default="&quot;root&quot;"/>
+    <parameter name="database" byreference="false" type="string" default="&quot;PaladinsAPI&quot;"/>
+  </constructor>
+  <method name="ping" start="60" end="62" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="connect" start="63" end="85" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="implement loading from session out of mysql database" line="64"/>
+    </inline>
+  </method>
+  <method name="testSession" start="86" end="88" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getServerStatus" start="90" end="92" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getDataUsed" start="93" end="95" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="req" start="96" end="114" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="url" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getSignature" start="115" end="117" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="reqType" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getChampions" start="118" end="120" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getChampionSkins" start="121" end="123" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getChampion" start="124" end="132" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getPlayer" start="133" end="135" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="player" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getPlayerLoadouts" start="136" end="138" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="playerId" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getPlayerStatus" start="139" end="141" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="player" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getFriends" start="142" end="144" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="player" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getGodRanks" start="145" end="147" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="player" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getChampionRanks" start="148" end="150" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="player" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getItems" start="151" end="153" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getTimestamp" start="154" end="156" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getSessionID" start="157" end="159" abstract="false" final="false" static="false" visibility="public"/>
+</class>
