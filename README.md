@@ -80,7 +80,7 @@ This returns a assoc array with all the Champions.
 ___
 #### getChampion($name)
 
-This returns an assoc array based of the Champions name provided in `$name`. For example: `$paladins->getChampion("Androxus");`.
+This returns an Champion Object based of the Champions name provided in `$name`. For example: `$paladins->getChampion("Androxus");`.
 ___
 #### getChampionSkins($id)
 
