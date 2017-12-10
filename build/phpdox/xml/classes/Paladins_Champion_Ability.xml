@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Paladins\Champion\Ability" namespace="Paladins\Champion" name="Ability" abstract="false" final="false" start="16" end="66">
+  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion" file="Ability.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion/Ability.php" size="1362" time="2017-12-10T14:13:53+00:00" unixtime="1512915233" sha1="f4701fa3e5e1328e87e998abe97a2e72730aea93" relative="Champion/Ability.php"/>
+  <docblock>
+    <description compact="Class Ability"/>
+    <package value="Paladins\Champion"/>
+  </docblock>
+  <member name="description" visibility="private" static="false" line="19">
+    <docblock>
+      <var description="$description Should contain the abilitys description" type="string"/>
+    </docblock>
+  </member>
+  <member name="id" visibility="private" static="false" line="21">
+    <docblock>
+      <var description="$id Should contain the abilitys ID." type="int"/>
+    </docblock>
+  </member>
+  <member name="summary" visibility="private" static="false" line="23">
+    <docblock>
+      <var description="$summary Should contain the abilitys summary." type="string"/>
+    </docblock>
+  </member>
+  <member name="URL" visibility="private" static="false" line="25">
+    <docblock>
+      <var description="$URL Should contain the abilitys image url" type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="31" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Ability constructor."/>
+      <param variable="$ability" type="array"/>
+    </docblock>
+    <parameter name="ability" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="getDescription" start="41" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Paladins\Champion\mixed|string" namespace="Paladins\Champion" name="mixed|string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="getID" start="48" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Paladins\Champion\int|mixed" namespace="Paladins\Champion" name="int|mixed"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="getSummary" start="55" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Paladins\Champion\mixed|string" namespace="Paladins\Champion" name="mixed|string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="getIMG" start="62" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Paladins\Champion\mixed|string" namespace="Paladins\Champion" name="mixed|string"/>
+      </return>
+    </docblock>
+  </method>
+</class>

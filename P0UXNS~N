@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phploc>
-  <loc>326</loc>
+  <directories>1</directories>
+  <files>3</files>
+  <loc>582</loc>
   <lloc>133</lloc>
   <llocClasses>130</llocClasses>
   <llocFunctions>0</llocFunctions>
   <llocGlobal>3</llocGlobal>
-  <cloc>16</cloc>
+  <cloc>246</cloc>
   <ccn>12</ccn>
   <ccnMethods>12</ccnMethods>
   <interfaces>0</interfaces>
@@ -50,6 +52,6 @@
   <methodLlocMin>1</methodLlocMin>
   <methodLlocAvg>2.0454545454545</methodLlocAvg>
   <methodLlocMax>17</methodLlocMax>
-  <namespaces>1</namespaces>
-  <ncloc>310</ncloc>
+  <namespaces>2</namespaces>
+  <ncloc>336</ncloc>
 </phploc>
