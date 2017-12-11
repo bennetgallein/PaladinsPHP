@@ -10,6 +10,6 @@
     <class name="Champion" src="Champion/Champion.php" description="Class Champion" xml="classes/Paladins_Champion_Champion.xml"/>
   </namespace>
   <namespace name="Paladins">
-    <class name="Paladins" src="Paladins.php" description="Class Paladins" xml="classes/Paladins_Paladins.xml"/>
-  </namespace>
+    
+  <class name="Paladins" src="Paladins.php" description="Class Paladins" xml="classes/Paladins_Paladins.xml"/></namespace>
 </index>

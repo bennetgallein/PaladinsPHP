@@ -24,11 +24,7 @@ class Paladins {
     const XML = 'xml';
 
     /**
-     * @var string $timestamp
-     */
-    private $timestamp;
-    /**
-     * @var int $timestamp
+     * @var int $session_id
      */
     private $session_id;
 
@@ -155,11 +151,7 @@ class Paladins {
      * @return mixed
      */
     private function req($url) {
-        if (isset($this->timestamp)) {
-            if (strtotime($this->timestamp) < strtotime("-15 minutes")) {
-                $this->connect();
-            }
-        }
+
         $ch = curl_init();
         curl_setopt_array($ch, array(
             CURLOPT_URL => $this->baseURL . "/" . $url,

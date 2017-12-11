@@ -10,6 +10,6 @@
       <file name="Ability.php" size="1389" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="83108a4fdb5bb9598397695b0a4d61a11493bc10" xml="tokens/Champion/Ability.php.xml"/>
       <file name="Champion.php" size="4968" time="2017-12-11T16:05:40+00:00" unixtime="1513008340" sha1="d9cae08e46cec8b7a34d185c5fa65254bbd2f871" xml="tokens/Champion/Champion.php.xml"/>
     </dir>
-    <file name="Paladins.php" size="8860" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="36e8490b3eb0a12ced0b13b451a2bca195627012" xml="tokens/Paladins.php.xml"/>
+    <file name="Paladins.php" size="9194" time="2017-12-11T16:32:07+00:00" unixtime="1513009927" sha1="eaeaf1373f70557618f023e39dfcf8f433a1dc48" xml="tokens/Paladins.php.xml"/>
   </dir>
 </source>
