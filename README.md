@@ -37,6 +37,7 @@ ___
 ## Documentation
 
 Own Documentation will follow, for now here is the Link to the [official Hi-Rez API Documentation](https://docs.google.com/document/d/1OFS-3ocSx-1Rvg4afAnEHlT3917MAK_6eJTR6rzr-BM/edit);
+PHP Documentation can be found [here](https://bennetgallein.github.io/PaladinsPHP)
 ***
 
 #### connect()
