@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Paladins\Paladins" namespace="Paladins" name="Paladins" abstract="false" final="false" start="10" end="273">
-  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src" file="Paladins.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Paladins.php" size="8860" time="2017-12-10T14:44:50+00:00" unixtime="1512917090" sha1="36e8490b3eb0a12ced0b13b451a2bca195627012" relative="Paladins.php"/>
+  <file path="/home/share/web/html/PaladinsPHP/src" file="Paladins.php" realpath="/home/share/web/html/PaladinsPHP/src/Paladins.php" size="8860" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="36e8490b3eb0a12ced0b13b451a2bca195627012" relative="Paladins.php"/>
   <docblock>
     <description compact="Class Paladins"/>
     <package value="Paladins"/>

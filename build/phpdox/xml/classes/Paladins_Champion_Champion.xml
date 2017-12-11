@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Paladins\Champion\Champion" namespace="Paladins\Champion" name="Champion" abstract="false" final="false" start="17" end="247">
-  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion" file="Champion.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion/Champion.php" size="4508" time="2017-12-10T14:44:41+00:00" unixtime="1512917081" sha1="124a7a1b7ddf83d2a837b28c866dc2fbb6b1ee06" relative="Champion/Champion.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Paladins\Champion\Champion" namespace="Paladins\Champion" name="Champion" abstract="false" final="false" start="17" end="267">
+  <file path="/home/share/web/html/PaladinsPHP/src/Champion" file="Champion.php" realpath="/home/share/web/html/PaladinsPHP/src/Champion/Champion.php" size="4968" time="2017-12-11T16:05:40+00:00" unixtime="1513008340" sha1="d9cae08e46cec8b7a34d185c5fa65254bbd2f871" relative="Champion/Champion.php"/>
   <docblock>
     <description compact="Class Champion"/>
     <package value="Paladins\Champion"/>
@@ -120,32 +120,51 @@
       </var>
     </docblock>
   </member>
-  <constructor name="__construct" start="95" end="120" abstract="false" final="false" static="false" visibility="public">
+  <member name="skinarray" default="" type="array" visibility="private" static="false" line="93">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="99" end="124" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Champion constructor."/>
       <param variable="$champion"/>
     </docblock>
     <parameter name="champion" byreference="false" type="{unknown}"/>
   </constructor>
-  <method name="getID" start="125" end="127" abstract="false" final="false" static="false" visibility="public">
+  <method name="loadSkins" start="129" end="134" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
-      <return type="mixed"/>
+      <param variable="$paladins"/>
     </docblock>
+    <parameter name="paladins" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getName" start="132" end="134" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description/>
-      <return type="mixed"/>
-    </docblock>
-  </method>
-  <method name="getAllAbilitys" start="139" end="141" abstract="false" final="false" static="false" visibility="public">
+  <method name="getSkinarray" start="138" end="141" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="array"/>
     </docblock>
   </method>
-  <method name="getAbility1" start="146" end="148" abstract="false" final="false" static="false" visibility="public">
+  <method name="getID" start="145" end="147" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getName" start="152" end="154" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getAllAbilitys" start="159" end="161" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="getAbility1" start="166" end="168" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="object">
@@ -153,7 +172,7 @@
       </return>
     </docblock>
   </method>
-  <method name="getAbility2" start="153" end="155" abstract="false" final="false" static="false" visibility="public">
+  <method name="getAbility2" start="173" end="175" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="object">
@@ -161,7 +180,7 @@
       </return>
     </docblock>
   </method>
-  <method name="getAbility3" start="160" end="162" abstract="false" final="false" static="false" visibility="public">
+  <method name="getAbility3" start="180" end="182" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="object">
@@ -169,7 +188,7 @@
       </return>
     </docblock>
   </method>
-  <method name="getAbility4" start="167" end="169" abstract="false" final="false" static="false" visibility="public">
+  <method name="getAbility4" start="187" end="189" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="object">
@@ -177,7 +196,7 @@
       </return>
     </docblock>
   </method>
-  <method name="getAbility5" start="174" end="176" abstract="false" final="false" static="false" visibility="public">
+  <method name="getAbility5" start="194" end="196" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="object">
@@ -185,61 +204,61 @@
       </return>
     </docblock>
   </method>
-  <method name="getChampionCardUrl" start="181" end="183" abstract="false" final="false" static="false" visibility="public">
+  <method name="getChampionCardUrl" start="201" end="203" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getChampionIconUrl" start="188" end="190" abstract="false" final="false" static="false" visibility="public">
+  <method name="getChampionIconUrl" start="208" end="210" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getHealth" start="195" end="197" abstract="false" final="false" static="false" visibility="public">
+  <method name="getHealth" start="215" end="217" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getPantheon" start="202" end="204" abstract="false" final="false" static="false" visibility="public">
+  <method name="getPantheon" start="222" end="224" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getCons" start="209" end="211" abstract="false" final="false" static="false" visibility="public">
+  <method name="getCons" start="229" end="231" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getPros" start="216" end="218" abstract="false" final="false" static="false" visibility="public">
+  <method name="getPros" start="236" end="238" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getRole" start="223" end="225" abstract="false" final="false" static="false" visibility="public">
+  <method name="getRole" start="243" end="245" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getSpeed" start="230" end="232" abstract="false" final="false" static="false" visibility="public">
+  <method name="getSpeed" start="250" end="252" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getTitle" start="237" end="239" abstract="false" final="false" static="false" visibility="public">
+  <method name="getTitle" start="257" end="259" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="isLatestChampion" start="244" end="246" abstract="false" final="false" static="false" visibility="public">
+  <method name="isLatestChampion" start="264" end="266" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="object">

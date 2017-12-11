@@ -87,6 +87,10 @@ class Champion {
      */
     private $latestChampion;
 
+    /**
+     * @var array
+     */
+    private $skinarray = array();
 
     /**
      * Champion constructor.
@@ -119,6 +123,22 @@ class Champion {
         $this->latestChampion = ($champion['latestChampion'] == "n" ? false : true);
     }
 
+    /**
+     * @param $paladins
+     */
+    public function loadSkins($paladins) {
+        foreach ($paladins->getChampionSkins($this->id) as $skind) {
+            $skin = new Skin($skind);
+            array_push($this->skinarray, $skin);
+        }
+    }
+    /**
+     * @return array
+     */
+    public function getSkinarray()
+    {
+        return $this->skinarray;
+    }
     /**
      * @return mixed
      */

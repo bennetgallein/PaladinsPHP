@@ -228,7 +228,18 @@ class Paladins {
     public function getPlayerStatus($player) {
         return $this->req("getplayerstatus" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getplayerstatus") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player)[0];
     }
-
+    /**
+    * @return mixed
+    */
+    public function getTeamDetails($clanid) {
+        return $this->req("getteamdetails" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getteamdetails") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $clanid);
+    }
+    /**
+     * @return mixed
+     */
+    public function searchTeams($clanname) {
+        return $this->req("searchteams" . $this->format . "/" . $this->devId . "/" . $this->getSignature("searchteams") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $clanname);
+    }
     /**
      * @return mixed
      */

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Paladins\Champion\Ability" namespace="Paladins\Champion" name="Ability" abstract="false" final="false" start="17" end="67">
-  <file path="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion" file="Ability.php" realpath="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src/Champion/Ability.php" size="1389" time="2017-12-10T14:44:37+00:00" unixtime="1512917077" sha1="83108a4fdb5bb9598397695b0a4d61a11493bc10" relative="Champion/Ability.php"/>
+  <file path="/home/share/web/html/PaladinsPHP/src/Champion" file="Ability.php" realpath="/home/share/web/html/PaladinsPHP/src/Champion/Ability.php" size="1389" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="83108a4fdb5bb9598397695b0a4d61a11493bc10" relative="Champion/Ability.php"/>
   <docblock>
     <description compact="Class Ability"/>
     <package value="Paladins\Champion"/>

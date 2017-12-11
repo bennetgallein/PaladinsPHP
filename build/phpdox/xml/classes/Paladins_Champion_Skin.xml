@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Paladins\Champion\Skin" namespace="Paladins\Champion" name="Skin" abstract="false" final="false" start="12" end="81">
+  <file path="/home/share/web/html/PaladinsPHP/src/Champion" file="Skin.php" realpath="/home/share/web/html/PaladinsPHP/src/Champion/Skin.php" size="1416" time="2017-12-11T16:07:08+00:00" unixtime="1513008428" sha1="e6fd3d07c6371603d903d6d452f35f2225f83899" relative="Champion/Skin.php"/>
+  <member name="championid" visibility="private" static="false" line="17">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="championname" visibility="private" static="false" line="21">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="skinid1" visibility="private" static="false" line="25">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="skinid2" visibility="private" static="false" line="29">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="skinname" visibility="private" static="false" line="33">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="39" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Skin constructor."/>
+      <param variable="$data"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="getChampionid" start="49" end="51" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getChampionname" start="56" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getSkinid1" start="63" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getSkinid2" start="70" end="72" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getSkinname" start="77" end="79" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+</class>

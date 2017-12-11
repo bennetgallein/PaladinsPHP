@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<index xmlns="http://xml.phpdox.net/src" basedir="/home/storage01/Bennet/WEB/OCC/PaladinsPHP/src">
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/share/web/html/PaladinsPHP/src">
+  <namespace name="Paladins\Player">
+    <class name="Player" src="Player/Player.php" description="Class Player" xml="classes/Paladins_Player_Player.xml"/>
+    <class name="RankedConquest" src="Player/RankedConquest.php" description="Class RankedConquest" xml="classes/Paladins_Player_RankedConquest.xml"/>
+  </namespace>
+  <namespace name="Paladins\Champion">
+    <class name="Skin" src="Champion/Skin.php" xml="classes/Paladins_Champion_Skin.xml"/>
+    <class name="Ability" src="Champion/Ability.php" description="Class Ability" xml="classes/Paladins_Champion_Ability.xml"/>
+    <class name="Champion" src="Champion/Champion.php" description="Class Champion" xml="classes/Paladins_Champion_Champion.xml"/>
+  </namespace>
   <namespace name="Paladins">
-    
-    
-    
-  <class name="Paladins" src="Paladins.php" description="Class Paladins" xml="classes/Paladins_Paladins.xml"/></namespace>
-<namespace name="Paladins\Champion"><class name="Champion" src="Champion/Champion.php" description="Class Champion" xml="classes/Paladins_Champion_Champion.xml"/><class name="Ability" src="Champion/Ability.php" description="Class Ability" xml="classes/Paladins_Champion_Ability.xml"/></namespace><namespace name="Paladins\Player"><class name="RankedConquest" src="Player/RankedConquest.php" description="Class RankedConquest" xml="classes/Paladins_Player_RankedConquest.xml"/><class name="Player" src="Player/Player.php" description="Class Player" xml="classes/Paladins_Player_Player.xml"/></namespace></index>
+    <class name="Paladins" src="Paladins.php" description="Class Paladins" xml="classes/Paladins_Paladins.xml"/>
+  </namespace>
+</index>
