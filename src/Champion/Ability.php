@@ -31,7 +31,7 @@ class Ability {
      */
     public function __construct($ability) {
         $this->description = $ability['Description'];
-        $this->id = $ability['Id'];
+        $this->id = (string) $ability['Id'];
         $this->summary = $ability['Summary'];
         $this->URL = $ability['URL'];
     }
