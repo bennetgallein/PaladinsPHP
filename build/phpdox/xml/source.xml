@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
-  <dir name="/home/share/web/html/PaladinsPHP/src">
+  <dir name="/home/storage01/Bennet/WEB/PaladinsPHP/src">
     <dir name="Player">
-      <file name="Player.php" size="3866" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="4882cdf960e1ab8aff4a6ea157fe265d136925b6" xml="tokens/Player/Player.php.xml"/>
-      <file name="RankedConquest.php" size="3500" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="506d503cebbefd94b30a8fbb2d1d6005869d9c50" xml="tokens/Player/RankedConquest.php.xml"/>
+      <file name="RankedConquest.php" size="3500" time="2017-12-12T22:19:52+00:00" unixtime="1513117192" sha1="506d503cebbefd94b30a8fbb2d1d6005869d9c50" xml="tokens/Player/RankedConquest.php.xml"/>
+      <file name="Player.php" size="3866" time="2017-12-12T22:19:52+00:00" unixtime="1513117192" sha1="4882cdf960e1ab8aff4a6ea157fe265d136925b6" xml="tokens/Player/Player.php.xml"/>
     </dir>
+    <file name="Paladins.php" size="9219" time="2017-12-15T21:54:16+00:00" unixtime="1513374856" sha1="a21b774286c64de4e141efc1dc78774b4f574335" xml="tokens/Paladins.php.xml"/>
     <dir name="Champion">
-      <file name="Skin.php" size="1416" time="2017-12-11T16:07:08+00:00" unixtime="1513008428" sha1="e6fd3d07c6371603d903d6d452f35f2225f83899" xml="tokens/Champion/Skin.php.xml"/>
-      <file name="Ability.php" size="1389" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="83108a4fdb5bb9598397695b0a4d61a11493bc10" xml="tokens/Champion/Ability.php.xml"/>
-      <file name="Champion.php" size="4968" time="2017-12-11T16:05:40+00:00" unixtime="1513008340" sha1="d9cae08e46cec8b7a34d185c5fa65254bbd2f871" xml="tokens/Champion/Champion.php.xml"/>
+      <file name="Champion.php" size="4968" time="2017-12-12T22:19:52+00:00" unixtime="1513117192" sha1="d9cae08e46cec8b7a34d185c5fa65254bbd2f871" xml="tokens/Champion/Champion.php.xml"/>
+      <file name="Skin.php" size="1237" time="2017-12-15T22:34:56+00:00" unixtime="1513377296" sha1="2de1a64cf8e11928e3982ff0ad2bf580f2bd5f2a" xml="tokens/Champion/Skin.php.xml"/>
+      <file name="Ability.php" size="1398" time="2017-12-12T22:22:02+00:00" unixtime="1513117322" sha1="53ef5a480896bdfa28704945d7ef0bd16e7975a1" xml="tokens/Champion/Ability.php.xml"/>
     </dir>
-    <file name="Paladins.php" size="9194" time="2017-12-11T16:32:07+00:00" unixtime="1513009927" sha1="eaeaf1373f70557618f023e39dfcf8f433a1dc48" xml="tokens/Paladins.php.xml"/>
   </dir>
 </source>

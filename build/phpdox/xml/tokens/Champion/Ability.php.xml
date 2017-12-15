@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/home/share/web/html/PaladinsPHP/src/Champion" file="Ability.php" realpath="/home/share/web/html/PaladinsPHP/src/Champion/Ability.php" size="1389" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="83108a4fdb5bb9598397695b0a4d61a11493bc10" relative="Champion/Ability.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/home/storage01/Bennet/WEB/PaladinsPHP/src/Champion" file="Ability.php" realpath="/home/storage01/Bennet/WEB/PaladinsPHP/src/Champion/Ability.php" size="1398" time="2017-12-12T22:22:02+00:00" unixtime="1513117322" sha1="53ef5a480896bdfa28704945d7ef0bd16e7975a1" relative="Champion/Ability.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -148,6 +148,8 @@
     <token name="T_STRING">id</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING_CAST">(string)</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$ability</token>
     <token name="T_PHPDOX_OPEN_SQUARE">[</token>
@@ -334,4 +336,5 @@
   <line no="67">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
+  <line no="68"/>
 </source>

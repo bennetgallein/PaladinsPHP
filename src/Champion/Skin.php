@@ -28,11 +28,6 @@ class Skin {
      */
     private $skinid2;
     /**
-     * @var string
-     */
-    private $skinname;
-
-    /**
      * Skin constructor.
      * @param $data
      */
@@ -63,15 +58,7 @@ class Skin {
     public function getSkinid1() {
         return $this->skinid1;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getSkinid2() {
-        return $this->skinid2;
-    }
-
-    /**
+        /**
      * @return mixed
      */
     public function getSkinname() {

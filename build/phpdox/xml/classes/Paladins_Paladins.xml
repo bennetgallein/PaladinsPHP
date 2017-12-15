@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Paladins\Paladins" namespace="Paladins" name="Paladins" abstract="false" final="false" start="10" end="276">
-  <file path="/home/share/web/html/PaladinsPHP/src" file="Paladins.php" realpath="/home/share/web/html/PaladinsPHP/src/Paladins.php" size="9194" time="2017-12-11T16:32:07+00:00" unixtime="1513009927" sha1="eaeaf1373f70557618f023e39dfcf8f433a1dc48" relative="Paladins.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Paladins\Paladins" namespace="Paladins" name="Paladins" abstract="false" final="false" start="11" end="277">
+  <file path="/home/storage01/Bennet/WEB/PaladinsPHP/src" file="Paladins.php" realpath="/home/storage01/Bennet/WEB/PaladinsPHP/src/Paladins.php" size="9219" time="2017-12-15T21:54:16+00:00" unixtime="1513374856" sha1="a21b774286c64de4e141efc1dc78774b4f574335" relative="Paladins.php"/>
   <docblock>
     <description compact="Class Paladins"/>
     <package value="Paladins"/>
@@ -17,43 +17,43 @@
   <constant type="integer" name="TURKISH" value="13"/>
   <constant type="string" name="JSON" value="'Json'"/>
   <constant type="string" name="XML" value="'xml'"/>
-  <member name="session_id" visibility="private" static="false" line="29">
+  <member name="session_id" visibility="private" static="false" line="30">
     <docblock>
       <description/>
       <var description="$session_id" type="int"/>
     </docblock>
   </member>
-  <member name="devId" visibility="private" static="false" line="34">
+  <member name="devId" visibility="private" static="false" line="35">
     <docblock>
       <description/>
       <var description="$devId" type="int"/>
     </docblock>
   </member>
-  <member name="authKey" visibility="private" static="false" line="38">
+  <member name="authKey" visibility="private" static="false" line="39">
     <docblock>
       <description/>
       <var description="$authKey" type="string"/>
     </docblock>
   </member>
-  <member name="format" visibility="private" static="false" line="42">
+  <member name="format" visibility="private" static="false" line="43">
     <docblock>
       <description/>
       <var description="$format" type="string"/>
     </docblock>
   </member>
-  <member name="lang" visibility="private" static="false" line="46">
+  <member name="lang" visibility="private" static="false" line="47">
     <docblock>
       <description/>
       <var description="$lang" type="int"/>
     </docblock>
   </member>
-  <member name="baseURL" default="'http://api.paladins.com/paladinsapi.svc'" type="string" visibility="private" static="false" line="51">
+  <member name="baseURL" default="'http://api.paladins.com/paladinsapi.svc'" type="string" visibility="private" static="false" line="52">
     <docblock>
       <description/>
       <var description="$baseURL" type="string"/>
     </docblock>
   </member>
-  <member name="link" visibility="private" static="false" line="56">
+  <member name="link" visibility="private" static="false" line="57">
     <docblock>
       <description/>
       <var description="$link" type="object">
@@ -61,7 +61,7 @@
       </var>
     </docblock>
   </member>
-  <constructor name="__construct" start="69" end="93" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="70" end="94" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Paladins constructor."/>
       <param variable="$devId"/>
@@ -82,141 +82,141 @@
     <parameter name="password" byreference="false" type="string" default="&quot;root&quot;"/>
     <parameter name="database" byreference="false" type="string" default="&quot;PaladinsAPI&quot;"/>
   </constructor>
-  <method name="ping" start="98" end="100" abstract="false" final="false" static="false" visibility="public">
+  <method name="ping" start="99" end="101" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="connect" start="105" end="127" abstract="false" final="false" static="false" visibility="public">
+  <method name="connect" start="106" end="128" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="connection function"/>
     </docblock>
     <inline>
-      <comment value="implement loading from session out of mysql database" line="106"/>
+      <comment value="implement loading from session out of mysql database" line="107"/>
     </inline>
   </method>
-  <method name="testSession" start="132" end="134" abstract="false" final="false" static="false" visibility="public">
+  <method name="testSession" start="133" end="135" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getServerStatus" start="139" end="141" abstract="false" final="false" static="false" visibility="public">
+  <method name="getServerStatus" start="140" end="142" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getDataUsed" start="146" end="148" abstract="false" final="false" static="false" visibility="public">
+  <method name="getDataUsed" start="147" end="149" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="req" start="153" end="167" abstract="false" final="false" static="false" visibility="private">
+  <method name="req" start="154" end="168" abstract="false" final="false" static="false" visibility="private">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="url" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getSignature" start="172" end="174" abstract="false" final="false" static="false" visibility="public">
+  <method name="getSignature" start="173" end="175" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="reqType" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getChampions" start="179" end="181" abstract="false" final="false" static="false" visibility="public">
+  <method name="getChampions" start="180" end="182" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getChampionSkins" start="186" end="188" abstract="false" final="false" static="false" visibility="public">
+  <method name="getChampionSkins" start="187" end="189" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="id" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getChampion" start="193" end="201" abstract="false" final="false" static="false" visibility="public">
+  <method name="getChampion" start="194" end="202" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getPlayer" start="206" end="208" abstract="false" final="false" static="false" visibility="public">
+  <method name="getPlayer" start="207" end="209" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="player" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getPlayerLoadouts" start="213" end="215" abstract="false" final="false" static="false" visibility="public">
+  <method name="getPlayerLoadouts" start="214" end="216" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="playerId" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getPlayerStatus" start="220" end="222" abstract="false" final="false" static="false" visibility="public">
+  <method name="getPlayerStatus" start="221" end="223" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="player" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getTeamDetails" start="226" end="228" abstract="false" final="false" static="false" visibility="public">
+  <method name="getTeamDetails" start="227" end="229" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="clanid" byreference="false" type="{unknown}"/>
   </method>
-  <method name="searchTeams" start="232" end="234" abstract="false" final="false" static="false" visibility="public">
+  <method name="searchTeams" start="233" end="235" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="clanname" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getFriends" start="238" end="240" abstract="false" final="false" static="false" visibility="public">
+  <method name="getFriends" start="239" end="241" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="player" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getGodRanks" start="245" end="247" abstract="false" final="false" static="false" visibility="public">
+  <method name="getGodRanks" start="246" end="248" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="player" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getChampionRanks" start="252" end="254" abstract="false" final="false" static="false" visibility="public">
+  <method name="getChampionRanks" start="253" end="255" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
     <parameter name="player" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getItems" start="259" end="261" abstract="false" final="false" static="false" visibility="public">
+  <method name="getItems" start="260" end="262" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getTimestamp" start="266" end="268" abstract="false" final="false" static="false" visibility="public">
+  <method name="getTimestamp" start="267" end="269" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>
     </docblock>
   </method>
-  <method name="getSessionID" start="273" end="275" abstract="false" final="false" static="false" visibility="public">
+  <method name="getSessionID" start="274" end="276" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="mixed"/>

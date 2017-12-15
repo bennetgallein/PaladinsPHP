@@ -1,6 +1,7 @@
 <?php
 namespace Paladins;
 
+use \Paladins\Player;
 
 /**
  * Class Paladins
@@ -204,7 +205,7 @@ class Paladins {
      * @return mixed
      */
     public function getPlayer($player) {
-        return $this->req("getplayer" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getplayer") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player)[0];
+        return ($this->req("getplayer" . $this->format . "/" . $this->devId . "/" . $this->getSignature("getplayer") . "/" . $this->session_id . "/" . $this->getTimestamp() . "/" . $player)[0]);
     }
 
     /**

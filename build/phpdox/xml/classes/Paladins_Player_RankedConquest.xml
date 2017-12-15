@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Paladins\Player\RankedConquest" namespace="Paladins\Player" name="RankedConquest" abstract="false" final="false" start="16" end="193">
-  <file path="/home/share/web/html/PaladinsPHP/src/Player" file="RankedConquest.php" realpath="/home/share/web/html/PaladinsPHP/src/Player/RankedConquest.php" size="3500" time="2017-12-11T15:48:15+00:00" unixtime="1513007295" sha1="506d503cebbefd94b30a8fbb2d1d6005869d9c50" relative="Player/RankedConquest.php"/>
+  <file path="/home/storage01/Bennet/WEB/PaladinsPHP/src/Player" file="RankedConquest.php" realpath="/home/storage01/Bennet/WEB/PaladinsPHP/src/Player/RankedConquest.php" size="3500" time="2017-12-12T22:19:52+00:00" unixtime="1513117192" sha1="506d503cebbefd94b30a8fbb2d1d6005869d9c50" relative="Player/RankedConquest.php"/>
   <docblock>
     <description compact="Class RankedConquest"/>
     <package value="Paladins\Player"/>
