@@ -5,6 +5,8 @@ You can find the PHP Documentation here: [https://bennetgallein.github.io/Paladi
 ___
 ## Getting Started
 
+# I started writing the documentation, you can visit it over at my own website [https://bennetgallein.de/](https://bennetgallein.de/PaladinsPHP)
+
 You can either copy the PHP file directly into your project or _preferable_ just use composer.
 ___
 #### Composer require command
