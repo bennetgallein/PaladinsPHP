@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Paladins\Paladins</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Paladins">Paladins</a>
+          </li>
+          <li class="separator">Paladins</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Paladins.php.xhtml#line11">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Paladins\</small>Paladins</h1>
+        <h4>Class Paladins</h4>
+        <p/>
+        <ul>
+          <li>Author: Bennet Gallein</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Paladins
+            {<br/><ul class="none"><li>// constants</li><li>const ENGLISH = 1;</li><li>const GERMAN = 2;</li><li>const FRENCH = 3;</li><li>const SPANISH = 7;</li><li>const SPANISHLA = 9;</li><li>const PORTUGUESE = 10;</li><li>const RUSSIAN = 11;</li><li>const POLISH = 12;</li><li>const TURKISH = 13;</li><li>const JSON = 'Json';</li><li>const XML = 'xml';</li></ul><ul class="none"><li>// members</li><li>private  <a href="#members">$session_id</a>;
+                    </li><li>private  <a href="#members">$devId</a>;
+                    </li><li>private  <a href="#members">$authKey</a>;
+                    </li><li>private  <a href="#members">$format</a>;
+                    </li><li>private  <a href="#members">$lang</a>;
+                    </li><li>private string <a href="#members">$baseURL</a> =
+                        'http://api.paladins.com/paladinsapi.svc';
+                    </li><li>private <span title="\mysqli">mysqli</span> <a href="#members">$link</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/__construct.xhtml">__construct</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/ping.xhtml">ping</a>()
+                    </li><li>public void <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/connect.xhtml">connect</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/testSession.xhtml">testSession</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getServerStatus.xhtml">getServerStatus</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getDataUsed.xhtml">getDataUsed</a>()
+                    </li><li>private mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/req.xhtml">req</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getSignature.xhtml">getSignature</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getChampions.xhtml">getChampions</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getChampionSkins.xhtml">getChampionSkins</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getChampion.xhtml">getChampion</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getPlayer.xhtml">getPlayer</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getPlayerLoadouts.xhtml">getPlayerLoadouts</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getPlayerStatus.xhtml">getPlayerStatus</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getTeamDetails.xhtml">getTeamDetails</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/searchTeams.xhtml">searchTeams</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getFriends.xhtml">getFriends</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getGodRanks.xhtml">getGodRanks</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getChampionRanks.xhtml">getChampionRanks</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getItems.xhtml">getItems</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getTimestamp.xhtml">getTimestamp</a>()
+                    </li><li>public mixed <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getSessionID.xhtml">getSessionID</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="ENGLISH">ENGLISH</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td id="GERMAN">GERMAN</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td id="FRENCH">FRENCH</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td id="SPANISH">SPANISH</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td id="SPANISHLA">SPANISHLA</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td id="PORTUGUESE">PORTUGUESE</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td id="RUSSIAN">RUSSIAN</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td id="POLISH">POLISH</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td id="TURKISH">TURKISH</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td id="JSON">JSON</td>
+              <td>'Json'</td>
+            </tr>
+            <tr>
+              <td id="XML">XML</td>
+              <td>'xml'</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="authKey"><strong>$authKey</strong>
+                —
+                string</li>
+            <li id="baseURL"><strong>$baseURL</strong>
+                —
+                string</li>
+            <li id="devId"><strong>$devId</strong>
+                —
+                int</li>
+            <li id="format"><strong>$format</strong>
+                —
+                string</li>
+            <li id="lang"><strong>$lang</strong>
+                —
+                int</li>
+            <li id="link"><strong>$link</strong>
+                —
+                <a title="\mysqli" href="../classes/_mysqli.xhtml">\mysqli</a></li>
+            <li id="session_id"><strong>$session_id</strong>
+                —
+                int</li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="req">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/req.xhtml">req()</a>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="Paladins\Paladins" href="../classes/Paladins_Paladins/__construct.xhtml">__construct()</a>
+                — Paladins constructor.</li>
+            <li id="connect"><a title="Paladins\Paladins" href="../classes/Paladins_Paladins/connect.xhtml">connect()</a>
+                — connection function</li>
+            <li id="getChampion">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getChampion.xhtml">getChampion()</a>
+            </li>
+            <li id="getChampionRanks">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getChampionRanks.xhtml">getChampionRanks()</a>
+            </li>
+            <li id="getChampionSkins">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getChampionSkins.xhtml">getChampionSkins()</a>
+            </li>
+            <li id="getChampions">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getChampions.xhtml">getChampions()</a>
+            </li>
+            <li id="getDataUsed">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getDataUsed.xhtml">getDataUsed()</a>
+            </li>
+            <li id="getFriends">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getFriends.xhtml">getFriends()</a>
+            </li>
+            <li id="getGodRanks">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getGodRanks.xhtml">getGodRanks()</a>
+            </li>
+            <li id="getItems">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getItems.xhtml">getItems()</a>
+            </li>
+            <li id="getPlayer">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getPlayer.xhtml">getPlayer()</a>
+            </li>
+            <li id="getPlayerLoadouts">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getPlayerLoadouts.xhtml">getPlayerLoadouts()</a>
+            </li>
+            <li id="getPlayerStatus">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getPlayerStatus.xhtml">getPlayerStatus()</a>
+            </li>
+            <li id="getServerStatus">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getServerStatus.xhtml">getServerStatus()</a>
+            </li>
+            <li id="getSessionID">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getSessionID.xhtml">getSessionID()</a>
+            </li>
+            <li id="getSignature">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getSignature.xhtml">getSignature()</a>
+            </li>
+            <li id="getTeamDetails">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getTeamDetails.xhtml">getTeamDetails()</a>
+            </li>
+            <li id="getTimestamp">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/getTimestamp.xhtml">getTimestamp()</a>
+            </li>
+            <li id="ping">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/ping.xhtml">ping()</a>
+            </li>
+            <li id="searchTeams">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/searchTeams.xhtml">searchTeams()</a>
+            </li>
+            <li id="testSession">
+              <a title="Paladins\Paladins" href="../classes/Paladins_Paladins/testSession.xhtml">testSession()</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0-dev - Copyright (C) 2010 - 2017 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>
