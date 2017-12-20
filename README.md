@@ -3,7 +3,7 @@
 This a wrapper for the Paladins API by Hi-Rez studios.
 You can find the PHP Documentation here: [http://bennetgallein.github.io/PaladinsPHP](http://bennetgallein.github.io/PaladinsPHP)
 ___
-### I started writing the documentation, you can visit it over at my own website [https://bennetgallein.de/](https://bennetgallein.de/PaladinsPHP)
+### I started writing the documentation, you can visit it over at my own website [http://bennetgallein.de/](http://bennetgallein.de/PaladinsPHP)
 ___
 ## TODO:
 #### methods:
