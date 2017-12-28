@@ -5,7 +5,7 @@
       <file name="RankedConquest.php" size="3500" time="2017-12-12T22:19:52+00:00" unixtime="1513117192" sha1="506d503cebbefd94b30a8fbb2d1d6005869d9c50" xml="tokens/Player/RankedConquest.php.xml"/>
       <file name="Player.php" size="3866" time="2017-12-12T22:19:52+00:00" unixtime="1513117192" sha1="4882cdf960e1ab8aff4a6ea157fe265d136925b6" xml="tokens/Player/Player.php.xml"/>
     </dir>
-    <file name="Paladins.php" size="9219" time="2017-12-15T21:54:16+00:00" unixtime="1513374856" sha1="a21b774286c64de4e141efc1dc78774b4f574335" xml="tokens/Paladins.php.xml"/>
+    <file name="Paladins.php" size="7612" time="2017-12-28T12:26:53+00:00" unixtime="1514464013" sha1="b2b21efbaca597aeb5c7ba63e6ba281d4118c6a7" xml="tokens/Paladins.php.xml"/>
     <dir name="Champion">
       <file name="Champion.php" size="4968" time="2017-12-12T22:19:52+00:00" unixtime="1513117192" sha1="d9cae08e46cec8b7a34d185c5fa65254bbd2f871" xml="tokens/Champion/Champion.php.xml"/>
       <file name="Skin.php" size="1237" time="2017-12-15T22:34:56+00:00" unixtime="1513377296" sha1="2de1a64cf8e11928e3982ff0ad2bf580f2bd5f2a" xml="tokens/Champion/Skin.php.xml"/>
