@@ -1,7 +1,6 @@
 <?php
 namespace Paladins;
 
-use \Paladins\Player;
 
 /**
  * Class Paladins
@@ -51,10 +50,6 @@ class Paladins {
      */
     private $baseURL = 'http://api.paladins.com/paladinsapi.svc';
 
-    /**
-     * @var \mysqli $link
-     */
-    private $link;
 
     /**
      * Paladins constructor.
@@ -62,30 +57,10 @@ class Paladins {
      * @param $authKey
      * @param string $format
      * @param int $lang
-     * @param string $host
-     * @param string $user
-     * @param string $password
-     * @param string $database
      */
-    public function __construct($devId, $authKey, $format = Paladins::JSON, $lang = Paladins::ENGLISH, $host = "localhost", $user = "root", $password = "root", $database = "PaladinsAPI") {
+    public function __construct($devId, $authKey, $format = Paladins::JSON, $lang = Paladins::ENGLISH) {
 
         date_default_timezone_set('UTC');
-
-        $this->link = mysqli_connect($host, $user, $password, $database);
-        mysqli_query($this->link, "SET names UTF8");
-        $query = "SHOW TABLES LIKE 'sessions'";
-        $res = mysqli_query($this->link, $query);
-        if ($res->num_rows != 1) {
-            $query = "CREATE TABLE sessions
-                        (
-                          `id`      INT AUTO_INCREMENT
-                            PRIMARY KEY,
-                          sessionid  VARCHAR(32)                         NOT NULL,
-                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
-                        );";
-            $result = mysqli_query($this->link, $query);
-            if (!$result) echo "MySQL Error!";
-        }
 
         $this->devId = $devId;
         $this->authKey = $authKey;
@@ -105,25 +80,12 @@ class Paladins {
      */
     public function connect() {
         // implement loading from session out of mysql database
-        $query = "SELECT * FROM sessions WHERE created_at > date_sub(now(), interval 14 minute)";
-        $result = mysqli_query($this->link, $query);
-        if ($result) {
-            if ($result->num_rows == 1) {
-                while($row = $result->fetch_object()) {
-                    $this->session_id = $row->sessionid;
-                }
-            } else if ($result->num_rows == 0) {
-                $session = $this->req("createsession" . $this->format . "/" . $this->devId . "/" . $this->getSignature("createsession") . "/" . $this->getTimestamp());
-                $query = "INSERT INTO sessions (sessionid) VALUES ('" . $session['session_id'] . "');";
-                $res = mysqli_query($this->link, $query);
-                if ($res) {
-                    $this->session_id = $session['session_id'];
-                } else {
-                    echo "Error saving the session key." . mysqli_error($this->link);
-                }
-            }
+        if (!apcu_exists("paladins_session_string")) {
+            $session = $this->req("createsession" . $this->format . "/" . $this->devId . "/" . $this->getSignature("createsession") . "/" . $this->getTimestamp());
+            apcu_store("paladins_session_string", $session['session_id'], 900); // 900 seconds = 60 * 15 ^= 15 mins.
+            $this->session_id = $session['session_id'];
         } else {
-            echo "Error:" . mysqli_error($this->link);
+            $this->session_id = apcu_fetch("paladins_session_string");
         }
     }
 

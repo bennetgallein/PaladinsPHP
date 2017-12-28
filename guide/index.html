@@ -62,12 +62,12 @@ $authKey = 'YOUR_DEV_AUTHKEY';
 $format = Paladins::JSON; // see Documentation
 $lang = Paladins::ENGLISH; // see Documentation
 
-$paladins = new Paladins($devId, $authKey, $format, $lang, &quot;localhost&quot;, &quot;root_user&quot;, &quot;root_password&quot;, &quot;database_name&quot;);
+$paladins = new Paladins($devId, $authKey, $format, $lang);
 
 $paladins-&gt;connect();
 ?&gt;
 </pre>
-                    <p><b>NOTE:</b> The API automatically renews the session with help of a MySQL Database. Therefore you need the MySQL Parameters. Default Parameters for host, user, password and database are the following: "localhost, root, root and PaladinsAPI".</p>
+                    <p><b>NOTE:</b> The API uses APC to save the session. Make sure to have it installed! Instructions are here: <a href="http://php.net/manual/de/apc.installation.php">php.net</a></p>
 
                     <p><b>Language and Format:</b></p>
                     <p>This library offers a few constats which are definetly good to use!</p>
@@ -89,7 +89,7 @@ const XML = 'xml';
                     <p>Access them with: Paladins::&lt;NAME&gt; for example: Paladins::ENGLISH;</p>
                     <br>
                     <h3><b>Important for connecting!</b></h3>
-                    <p>The Basic function to connect with the API-Endpoint. It takes 4 Parameters, not more, not less. $devId, $authKey, $format, $lang, $host, $user, $password, $database, where $format is the response format of the API and $lang the language you want to use. The $host, $user, $password and $database are MySQL Parameters. <b>Be sure to have a Database setup!</b> Table creation does the API itselfs.</p>
+                    <p>The Basic function to connect with the API-Endpoint. It takes 4 Parameters, not more, not less. $devId, $authKey, $format, $lang, where $format is the response format of the API and $lang the language you want to use. </p>
                     <h3 id="license"> License</h3>
                     <p> MIT License Copyright (c) 2017 Bennet Gallein <br>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. <br>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     </p>
