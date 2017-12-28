@@ -5,7 +5,11 @@ You can find the PHP Documentation here: [https://bennetgallein.github.io/Paladi
 ___
 ### I started writing the documentation, you can visit it over at my own website [https://bennetgallein.de/](https://bennetgallein.de/PaladinsPHP)
 ___
+
 ## TODO:
+
+In one of the next commits I'll remove the MySQL stuff (thanks @menasheh for mentioning) and replace the sessionkey managment with the APC PHP provides.
+http://it2.php.net/manual/en/function.apc-add.php
 #### methods:
 - ~~/createsession~~
 - ~~/testsession~~
