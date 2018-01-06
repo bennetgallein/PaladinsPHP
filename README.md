@@ -43,5 +43,5 @@ The project is MIT licensed.
 ___
 ## Contributing
 
-Pull requests and issues are open!
+Pull requests and issues are open! But read [CONTRIBUTE.md](CONTRIBUTE.md) first!
 ___
